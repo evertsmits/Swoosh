@@ -15,7 +15,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/background_image" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -28,7 +29,8 @@
         android:src="@drawable/swooshlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        android:contentDescription="@string/logo_for_swoosh" />
 
     <TextView
         android:id="@+id/textView"
@@ -38,7 +40,7 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/montserrat"
-        android:text="go all in"
+        android:text="@string/go_all_in"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/colorAccent"
@@ -55,7 +57,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/montserrat"
-        android:text="on going all out"
+        android:text="@string/on_going_all_out"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/colorAccent"
@@ -74,7 +76,7 @@
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/montserrat"
         android:singleLine="false"
-        android:text="Find a team in your city and the dominate the league"
+        android:text="@string/find_a_team_in_your_city_and_the_dominate_the_league"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/getStartedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -90,7 +92,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
-        android:text="Get started"
+        android:text="@string/get_started"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
