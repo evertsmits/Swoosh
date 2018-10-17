@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SkillActivity">
+    tools:context=".Controller.SkillActivity">
 
 
     <ImageView
@@ -60,12 +60,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/beginnerSkillBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onBeginnerClick"
             android:text="@string/beginner"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
@@ -74,12 +75,13 @@
             android:textStyle="bold" />
 
         <ToggleButton
-            android:id="@+id/toggleButton5"
+            android:id="@+id/ballerSkillBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onBallerClick"
             android:text="@string/baller"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
@@ -89,7 +91,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/skillFinishBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -97,6 +99,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="onSkillFinishedClick"
         android:text="@string/finish"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"

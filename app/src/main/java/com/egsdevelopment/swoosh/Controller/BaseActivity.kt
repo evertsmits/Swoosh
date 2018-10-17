@@ -1,4 +1,4 @@
-package com.egsdevelopment.swoosh
+package com.egsdevelopment.swoosh.Controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
